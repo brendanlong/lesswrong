@@ -68,3 +68,26 @@
 		display: none !important;
 	}
 }
+@media (max-width: 753px) {
+  a#miri,
+  a#fhi {
+    margin-top: 20px;
+  }
+  a#cfar {
+    margin: 10px 60px 0 50px;
+  }
+}
+@media (max-width: 666px) {
+  a#miri,
+  a#fhi,
+  a#cfar {
+    margin: 3px 3px 3px 20px;
+  }
+}
+@media (max-width: 590px) {
+  a#miri,
+  a#fhi,
+  a#cfar {
+    margin-left: 0;
+  }
+}

@@ -41,7 +41,7 @@ body {
 	margin: 0 auto;
 	padding: 0;
 	max-width: 990px;
-	min-width: 780px;
+	min-width: 570px;
 }
 #main {
 	display: table;
@@ -59,6 +59,7 @@ body {
 }
 #header {
 	overflow: hidden;
+	position: relative;
 }
 #content, #sidebar {
 	display: table-cell;
@@ -221,13 +222,18 @@ img#tagline {
   float: left;
   margin: 45px 0 0;
 }
+@media (max-width: 760px) {
+  img#tagline {
+    display: none;
+  }
+}
 a#miri,
 a#fhi,
 a#cfar {
   display: block;
   float: right;
-  height: 0;
-  padding-top: 69px;
+  height: 30px;
+  margin-top: 69px;
   overflow: hidden;
   margin: 45px 18px 0 0;
 }
@@ -235,7 +241,6 @@ a#miri {
   background: url(/static/miri.png?20130215-2) no-repeat top left;
   width: 78px;
   background-position: 0 -78px;
-  margin-top: 44px;
 }
 a#fhi {
   background: url(/static/FHI_diamond.png?20120720) no-repeat top left;
